@@ -1,0 +1,29 @@
+version: '3.7'
+
+
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:1.22
+    ports:
+      - 81:80
+    volumes:
+
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./src/main/resources/static:/usr/share/nginx/html
+
+    networks:
+      - frontend
+    depends_on:
+      - embedash
+
+  embedash:
+    container_name: embedash
+    image: embedash:latest
+    ports:
+      - 9191:9191
+    networks:
+      - frontend
+networks:
+  frontend:
+    name: frontend

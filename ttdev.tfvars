@@ -1,0 +1,11 @@
+region = "eu-north-1"
+vpc_id = "vpc-01f96e4e64751bf82"
+subnet_cidr_block = "10.0.0.32/28"
+ami = "ami-0efda064d1b5e46a5"
+instance_type = "t3.micro"
+keypair = "maxnorth"
+security_groups = [ "sg-05e55263632a378a7" ]
+private_key = "/var/jenkins_home/maxnorth.pem"
+availability_zone = "eu-north-1a"
+eipalloc = "eipalloc-07225c5947daddce7"
+backend_env = "dev_backup"

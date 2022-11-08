@@ -1,0 +1,11 @@
+region = "eu-central-1"
+vpc_id = "vpc-0e34366fff350ae30"
+subnet_cidr_block = "10.0.0.32/28"
+ami = "ami-0caef02b518350c8b"
+instance_type = "t2.micro"
+keypair = "maxkey"
+security_groups = [ "sg-0d8155dace04bc1fd" ]
+private_key = "/var/jenkins_home/maxkey.pem"
+availability_zone = "eu-central-1a"
+eipalloc = "eipalloc-0d5aa9a45707fb7ba"
+backend_env = "prod_backup"
